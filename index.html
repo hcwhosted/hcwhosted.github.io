@@ -3,92 +3,29 @@
 <html lang="en">
 
 <head>
-    <title>
-        Document
-    </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gitpage.css">
-    <script src="node_modules/pdfjs-dist/build/pdf.min.js"></script>
-    <script src="node_modules/d3/dist/d3.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
+  <title>
+    COVID-19 Cohorted Voluntary Self Quarantine
+  </title>
+  <script src="node_modules/pdfjs-dist/build/pdf.min.js"></script>
+  <script src="node_modules/d3/dist/d3.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="style/style.less">
+  <script type="text/javascript" src="node_modules/less/dist/less.min.js" data-log-level="1"></script>
+  <script type="module" src="controller.js"></script>
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <header>
-            <h1> COVID-19 Cohorted Voluntary Self Quarantine
-            </h1>
-            <h2>
-                About
-            </h2>
-            <div class="holder center">
-
-                <p>
-                    "This guideline applies to frontline healthcare workers (doctors, nurses, med techs, respiratory
-                    therapists, radiology techs, and others) who are in front-line emergency medicine roles, working and
-                    living in direct contact with COVID-19 patients, and are planning to self-quarantine for the safety
-                    of
-                    their loved ones."
-                </p>
-            </div>
-
-            <p>
-                Please refer to this site frequently for general info/links, enrollment, and instructive visualizations.
-            </p>
-
-        </header>
-
-        <section id="links">
-
-            <h2>
-                Useful Links
-            </h2>
-
-            <a href="">
-                Edit the Document
-            </a>
-
-            <a href="">
-                Other AZ specific intitives
-            </a>
-
-            <a href="">
-                Face shield creation DIY
-            </a>
-
-            <a href="">
-                Crowd Funding for CVSQ stations
-            </a>
-
-        </section>
-
-        <section>
-
-            <h2>
-                Visualizations
-            </h2>
-
-        </section>
-
-        <section>
-
-            <h2>
-                Article and information
-            </h2>
-            <div id="pdf">
-                <div class="holder">
-                <button id="prev">Prev</button>
-                <button id="next">Next</button>
-                </div>
-                <canvas id="the-canvas" style="border: 1px solid black; direction: ltr;"></canvas>
-
-            </div>
-
-        </section>
+  <div class="container" id="Menu"></div>
+  <div class="container">
+    <div class="row viewHolder">
+      <section id="About" class="col view"></section>
+      <section id="Links" class="col view"></section>
+      <section id="Vis" class="col view"></section>
+      <section id="Article" class="col view"></section>
+    </div>
+  </div>
 </body>
 
 </html>
