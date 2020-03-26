@@ -8,7 +8,8 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gitpage.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -73,9 +74,14 @@
             <h2>
                 Article and information
             </h2>
+            <div id="pdf">
+                <div class="holder">
+                <button id="next">Next</button>
+                <button id="prev">Prev</button>
+                </div>
+                <canvas id="the-canvas" style="border: 1px solid black; direction: ltr;"></canvas>
 
-            <iframe src="./article_unfinished.pdf" frameborder="0">
-            </iframe>
+            </div>
 
         </section>
 </body>

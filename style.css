@@ -28,6 +28,10 @@ h1 {
   justify-content: center;
 }
 
+.wide {
+  justify-content: space-around;
+}
+
 iframe {
   width:100%;
   height:500px;
