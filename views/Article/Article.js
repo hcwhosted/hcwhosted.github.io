@@ -16,7 +16,7 @@ class Article extends View {
     this.pageNumber = 1;
   }
   async showPage (pageNumber) {
-    this.pageNumber = pageNumber;
+    this.pageNumber = Math.max(1, Math.min(this.resources[1].numPages, pageNumber));
     const page = await this.resources[1].getPage(this.pageNumber);
     const viewport = page.getViewport({ scale: 1 });
 
