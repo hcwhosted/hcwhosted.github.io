@@ -41,3 +41,9 @@ node_modules/bootstrap/dist/js/*
 !node_modules/bootstrap/dist/css/
 node_modules/bootstrap/dist/css/*
 !node_modules/bootstrap/dist/css/bootstrap.min.css
+
+!node_modules/uki/
+node_modules/uki/*
+!node_modules/uki/dist/
+node_modules/uki/dist/*
+!node_modules/uki/dist/uki.esm.js
