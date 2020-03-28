@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/cvsq/cvsq.github.io/issues"
   },
+  "license": "CC0-1.0",
   "homepage": "https://github.com/cvsq/cvsq.github.io#readme",
   "devDependencies": {
     "serve": "^11.3.0"
