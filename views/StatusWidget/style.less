@@ -1,0 +1,55 @@
+.StatusWidget {
+  .col {
+    position: relative;
+    i {
+      display: block;
+      color: #4a358c;
+    }
+    .btn {
+      margin: 1em 0;
+    }
+    p {
+      text-align: left;
+    }
+    height: 27em;
+    .barWrapper {
+      position: absolute;
+      bottom: 3em;
+      left: 1em;
+      right: 1em;
+      height: 5em;
+      .bar {
+        position: absolute;
+        background-color: #d6d8d9;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        /* height determiend by javascript */
+      }
+    }
+    .countWrapper {
+      position: absolute;
+      bottom: 1em;
+    }
+    &.selected {
+      border-radius: 1em;
+      background-color: #4a358c;
+      color: white;
+      i {
+        color: white;
+      }
+      .barWrapper .bar {
+        background-color: white;
+      }
+    }
+  }
+  .alert {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  }
+}
