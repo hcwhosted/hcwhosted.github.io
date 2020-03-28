@@ -35,12 +35,9 @@ class Gallery extends View {
     cardsEnter.select('img')
       .attr('src', d => `views/Gallery/images/${d}`);
 
-    /*
-    TODO: something is broken with the styles for this...
     baguetteBox.run('.cards-gallery', {
       animation: 'slideIn'
     });
-    */
   }
 }
 
