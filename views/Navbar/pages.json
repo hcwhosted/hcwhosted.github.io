@@ -1,6 +1,6 @@
 [
   { "path": "/", "title": "Home" },
-  { "path": "/useful-links", "title": "Useful Links" },
-  { "path": "/visualizations", "title": "Visualizations" },
-  { "path": "/articles-and-information", "title": "Articles & Information" }
+  { "path": "/enroll-for-housing", "title": "Enroll For Housing" },
+  { "path": "/get-involved", "title": "Get Involved" },
+  { "path": "/faq", "title": "FAQs" }
 ]
