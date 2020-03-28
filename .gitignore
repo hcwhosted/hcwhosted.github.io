@@ -1,4 +1,5 @@
 package-lock.json
+.DS_Store
 
 # we want to include specific files inside node_modules and ignore the rest...
 
@@ -24,13 +25,6 @@ node_modules/jquery/*
 node_modules/jquery/dist/*
 !node_modules/jquery/dist/jquery.min.js
 
-!node_modules/pdfjs-dist/
-node_modules/pdfjs-dist/*
-!node_modules/pdfjs-dist/build/
-node_modules/pdfjs-dist/build/*
-!node_modules/pdfjs-dist/build/pdf.min.js
-!node_modules/pdfjs-dist/build/pdf.worker.js
-
 !node_modules/bootstrap/
 node_modules/bootstrap/*
 !node_modules/bootstrap/dist/
@@ -47,3 +41,10 @@ node_modules/uki/*
 !node_modules/uki/dist/
 node_modules/uki/dist/*
 !node_modules/uki/dist/uki.esm.js
+
+!node_modules/baguettebox.js/
+node_modules/baguettebox.js/*
+!node_modules/baguettebox.js/dist/
+node_modules/baguettebox.js/dist/*
+!node_modules/baguettebox.js/dist/baguetteBox.min.js
+!node_modules/baguettebox.js/dist/baguetteBox.min.css
