@@ -4,7 +4,7 @@ window.onload = () => {
 // make the map
 let map = L.map("mapcontainer", {
   center: [32.253460, -110.911789], // latitude, longitude in decimal degrees (find it on Google Maps with a right click!)
-  zoom:10, // can be 0-22, higher is closer
+  zoom:5, // can be 0-22, higher is closer
   scrollWheelZoom: true // don't zoom the map on scroll
 });
 // add the basemap tiles
