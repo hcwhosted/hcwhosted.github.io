@@ -7,25 +7,42 @@
   </title>
   <script src="node_modules/d3/dist/d3.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="style/bootstrap.css"/>
+  <link rel="stylesheet" href="style/bootstrap.css" />
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="node_modules/less/dist/less.min.js" data-log-level="1"></script>
   <script src="https://kit.fontawesome.com/f2d2b39d62.js" crossorigin="anonymous"></script>
   <script type="module" src="controllers/EnrollController.js"></script>
+  <!--leaflet links-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="leaflet.js"></script>
+
 </head>
 
 <body>
   <header></header>
   <main role="main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container mt-5">
-      <h1 class="display-4">Placeholder page</h1>
-      <p>This page will contain the enrollment form for housing.</p>
+    <div class="jumbotron">
+      <div class="container mt-5">
+        <h1 class="display-4">Placeholder page</h1>
+        <p>This page will contain the enrollment form for housing.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="StatusWidget container"></div>
+    <div class="StatusWidget container"></div>
+
+    <div class="container">
+      <h1>Housing resources available</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate pariatur nesciunt voluptas mollitia? Quis, suscipit modi placeat officia nam saepe, provident nulla iusto ratione perspiciatis adipisci quam consectetur laudantium inventore.</p>
+      <p>Leaflet webmap and OpenStreetMap tiles </p>
+      <div id="mapcontainer">
+      </div>
+    </div>
 
   </main>
   <footer class="footer bg-dark"></footer>
