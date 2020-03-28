@@ -3,11 +3,11 @@ import BaseController from './BaseController.js';
 
 import StatusWidget from '../views/StatusWidget/StatusWidget.js';
 
-class IndexController extends BaseController {
+class EnrollController extends BaseController {
   constructor () {
     super();
-    this.gallery = new StatusWidget(d3.select('.StatusWidget'));
+    this.statusWidget = new StatusWidget(d3.select('.StatusWidget'));
   }
 }
 
-window.controller = new IndexController();
+window.controller = new EnrollController();

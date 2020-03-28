@@ -31,9 +31,9 @@ class Gallery extends View {
     cardsEnter.html(this.resources[1]);
 
     cardsEnter.select('a')
-      .attr('href', d => `views/Gallery/images/${d}`);
+      .attr('href', d => `vis-photos/${d}`);
     cardsEnter.select('img')
-      .attr('src', d => `views/Gallery/images/${d}`);
+      .attr('src', d => `vis-photos/${d}`);
 
     baguetteBox.run('.cards-gallery', {
       animation: 'slideIn'
