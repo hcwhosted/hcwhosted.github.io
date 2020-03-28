@@ -1,255 +1,160 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>
-        COVID-19 Cohorted Voluntary Self Quarantine
-    </title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="custom.css">
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://kit.fontawesome.com/f2d2b39d62.js" crossorigin="anonymous"></script>
-    <!--<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gitpage.css">
-    <script src="index.js"></script>!-->
+  <title>
+    COVID-19 Cohorted Voluntary Self Quarantine
+  </title>
+  <script src="node_modules/d3/dist/d3.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="style/bootstrap.css"/>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="style/index.less">
+  <script type="text/javascript" src="node_modules/less/dist/less.min.js" data-log-level="1"></script>
+  <script src="https://kit.fontawesome.com/f2d2b39d62.js" crossorigin="anonymous"></script>
+  <script type="module" src="controllers/VanillaController.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-        <a class="navbar-brand" href="index.html">CVSQ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <header></header>
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container mt-5">
+        <div class="heroImage"><img src="assets/medicalteam-02.png" /></div>
+        <h1 class="display-4">Cohorted Voluntary Self Quarantine</h1>
+        <p>This guideline applies to frontline healthcare workers (doctors, nurses, med techs, respiratory
+          therapists, radiology techs, and others) who are in front-line emergency medicine roles, working and
+          living in direct contact with COVID-19 patients, and are planning to self-quarantine for the safety
+          of their loved ones.</p>
+        <p><a class="btn btn-secondary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="useful-links.html">Useful Links</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="visualizations.html">Visualizations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="articles-and-information.html">Articles & Information</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" style="color:#4a358c" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <main role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container mt-5">
-                <div class="heroImage"><img src="assets/medicalteam-02.png" /></div>
-                <h1 class="display-4">Cohorted Voluntary Self Quarantine</h1>
-                <p>This guideline applies to frontline healthcare workers (doctors, nurses, med techs, respiratory
-                    therapists, radiology techs, and others) who are in front-line emergency medicine roles, working and
-                    living in direct contact with COVID-19 patients, and are planning to self-quarantine for the safety
-                    of their loved ones.</p>
-                <p><a class="btn btn-secondary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-            </div>
-        </div>
-
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4" align="center">
-                    <img class="coronaIcon" src="assets/corona_icon-04.png" />
-                    <h2>COVID-19</h2>
-                    <p>COVID-19 was declared a global pandemic by the
-                        World Health Organization (WHO) on March
-                        11th, 2020. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4" align="center">
-                    <i class="fas fa-hospital-user fa-5x" style="color:#4a358c;"></i>
-                    <h2>Purpose</h2>
-                    <p>Ensure the health and wellbeing of our emergency care providers and of their families. To
-                        maintain an
-                        effective force and support a prolonged effort dealing with the COVID-19 pandemic. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4" align="center">
-                    <i class="far fa-question-circle fa-5x" style="color:#4a358c;"></i>
-                    <h2>FAQ</h2>
-                    <p>Find Answers Here</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-            </div>
-            <div class="alert alert-primary">
-                Please refer to this site frequently for general info/links, enrollment, and instructive visualizations.
-            </div>
-            <hr>
-            <h1>COVID-19 Quarantine Guidelines</h1>
-            <div class="heroImage clipboardImage"> <img src="assets/clipboard-03.png" /></div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">These Cohorted Voluntary Self-Quarantine (CVSQ) guidelines should be seen as an investment in protecting clinical staff and their families. It will be critical to maintain an active workforce of skilled physicians/clinicians for the duration of the pandemic. The goal is to “flatten the curve” through social distancing and prevention/delay of exposure and spread of COVID-19 within our community. The inherent qualities of COVID-19 necessitate that CVSQ be implemented proactively.
-                </li>
-                <br>
-                <h3>Basis for current understanding & assumptions</h3>
-                <p class="list-group-item">Unlike in many countries, clinicians in the US do not live on hospital grounds or in subsidized hospital/university housing. Many are trying to create plans for trying to minimize exposure risk to cohabitating family members without much evidence-base from which to find their decisions for minimizing exposure risk. Some clinicians are choosing to self-quarantine in hotels or other solitary situations that have the potential to have negative emotional and psychological consequences that will affect their ability to care for patients during this pandemic.</p>
-
-            </ul>
-            <br />
-            <h2>Background</h2>
-            <p></p>
-        </div>
-        </div>
-        </div>
-
-        </div>
-<section class="gallery-block cards-gallery">
     <div class="container">
-      <h2 class="display-" align="center"></h2>
-      <br />
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-6 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <a class="lightbox" href="https://www.who.int/images/default-source/health-topics/coronavirus/map.tmb-768v.jpg">
-              <img src="https://www.who.int/images/default-source/health-topics/coronavirus/map.tmb-768v.jpg" alt="Card Image" class="card-img-top">
-            </a>
-            <div class="card-body">
-              <h6>A Global Pandemic</h6>
-              <p class="text-dark card-text">COVID-19 was declared a global pandemic by the World Health Organization (WHO) on March 11th, 2020<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"><sup>[ref]</sup></a>
-              </p>
+        <div class="col-md-4" align="center">
+          <img class="coronaIcon" src="assets/corona_icon-04.png" />
+          <h2>COVID-19</h2>
+          <p>COVID-19 was declared a global pandemic by the
+            World Health Organization (WHO) on March
+            11th, 2020. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4" align="center">
+          <i class="fas fa-hospital-user fa-5x" style="color:#4a358c;"></i>
+          <h2>Purpose</h2>
+          <p>Ensure the health and wellbeing of our emergency care providers and of their families. To
+            maintain an
+            effective force and support a prolonged effort dealing with the COVID-19 pandemic. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4" align="center">
+          <i class="far fa-question-circle fa-5x" style="color:#4a358c;"></i>
+          <h2>FAQ</h2>
+          <p>Find Answers Here</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div class="alert alert-primary">
+        Please refer to this site frequently for general info/links, enrollment, and instructive visualizations.
+      </div>
+      <hr>
+      <h1>COVID-19 Quarantine Guidelines</h1>
+      <div class="heroImage clipboardImage"> <img src="assets/clipboard-03.png" /></div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">These Cohorted Voluntary Self-Quarantine (CVSQ) guidelines should be seen as an investment in protecting clinical staff and their families. It will be critical to maintain an active workforce of skilled physicians/clinicians for the duration of the pandemic. The goal is to “flatten the curve” through social distancing and prevention/delay of exposure and spread of COVID-19 within our community. The inherent qualities of COVID-19 necessitate that CVSQ be implemented proactively.
+        </li>
+        <br>
+        <h3>Basis for current understanding & assumptions</h3>
+        <p class="list-group-item">Unlike in many countries, clinicians in the US do not live on hospital grounds or in subsidized hospital/university housing. Many are trying to create plans for trying to minimize exposure risk to cohabitating family members without much evidence-base from which to find their decisions for minimizing exposure risk. Some clinicians are choosing to self-quarantine in hotels or other solitary situations that have the potential to have negative emotional and psychological consequences that will affect their ability to care for patients during this pandemic.</p>
+
+      </ul>
+      <br />
+      <h2>Background</h2>
+      <p></p>
+    </div>
+    <section class="gallery-block cards-gallery">
+      <div class="container">
+        <h2 class="display-" align="center"></h2>
+        <br />
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="https://www.who.int/images/default-source/health-topics/coronavirus/map.tmb-768v.jpg">
+                <img src="https://www.who.int/images/default-source/health-topics/coronavirus/map.tmb-768v.jpg" alt="Card Image" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h6>A Global Pandemic</h6>
+                <p class="text-dark card-text">COVID-19 was declared a global pandemic by the World Health Organization (WHO) on March 11th, 2020<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"><sup>[ref]</sup></a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <a class="lightbox" href="https://miro.medium.com/max/2000/1*ok3NLISRGvK-4SQyDA5KTg.png">
-              <img src="https://miro.medium.com/max/2000/1*ok3NLISRGvK-4SQyDA5KTg.png" alt="Card Image" class="card-img-top">
-            </a>
-            <div class="card-body">
-              <h6>The Curve</h6>
-              <p class="text-dark card-text">Current scenarios predict a 20-60% infection rate will result in all US hospital beds being overwhelmed by 200% to 700% within two to six months<a href="https://www.nytimes.com/interactive/2020/03/20/us/coronavirus-model-us-outbreak.html"><sup>[ref1, </sup><a href="https://www.nytimes.com/interactive/2020/03/27/upshot/coronavirus-new-york-comparison.html"><sup>ref2, </sup><a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56"><sup>ref3]</sup></a>
-              </p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="https://miro.medium.com/max/2000/1*ok3NLISRGvK-4SQyDA5KTg.png">
+                <img src="https://miro.medium.com/max/2000/1*ok3NLISRGvK-4SQyDA5KTg.png" alt="Card Image" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h6>The Curve</h6>
+                <p class="text-dark card-text">Current scenarios predict a 20-60% infection rate will result in all US hospital beds being overwhelmed by 200% to 700% within two to six months<a href="https://www.nytimes.com/interactive/2020/03/20/us/coronavirus-model-us-outbreak.html"><sup>[ref1, </sup><a href="https://www.nytimes.com/interactive/2020/03/27/upshot/coronavirus-new-york-comparison.html"><sup>ref2, </sup><a href="https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56"><sup>ref3]</sup></a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-8 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <iframe src="https://ourworldindata.org/grapher/total-daily-covid-deaths" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-            <div class="card-body">
-              <h6>Exponential Growth</h6>
-             <p class="text-dark card-text">COVID-19 continues to exhibit exponential growth, the number of reported cases doubling every four days in the continental USA and every eight days globally<a href="https://ourworldindata.org/coronavirus"><sup>[ref1, </sup><a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html"><sup>ref2]</sup></a>
-              </p>
+          <div class="col-md-8 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <iframe src="https://ourworldindata.org/grapher/total-daily-covid-deaths" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+              <div class="card-body">
+                <h6>Exponential Growth</h6>
+                <p class="text-dark card-text">COVID-19 continues to exhibit exponential growth, the number of reported cases doubling every four days in the continental USA and every eight days globally<a href="https://ourworldindata.org/coronavirus"><sup>[ref1, </sup><a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html"><sup>ref2]</sup></a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <a class="lightbox" href="vis-photos/image5.jpg">
-              <img src="vis-photos/image7.jpg" alt="Card Image" class="card-img-top">
-            </a>
-            <div class="card-body">
-              <h6>Effective Workforce</h6>
-              <p class="text-dark card-text">Not having the right safety measures in place to reduce familial transmission is a MAJOR concern for front-line Emergency Department clinicians and staff<a href="https://www.nbcnews.com/now/video/idaho-doctor-says-physicians-learning-from-each-other-to-battle-covid-19-80878661545"><sup>[ref1, </sup><a href="https://www.nbcnews.com/now/video/health-care-workers-worry-about-supply-shortage-during-coronavirus-pandemic-80865349855"><sup>ref2, </sup><a href="https://www.nytimes.com/video/nyregion/100000007052136/coronavirus-elmhurst-hospital-queens.html"><sup>ref3]</sup></a>
-              </p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="vis-photos/image5.jpg">
+                <img src="vis-photos/image7.jpg" alt="Card Image" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h6>Effective Workforce</h6>
+                <p class="text-dark card-text">Not having the right safety measures in place to reduce familial transmission is a MAJOR concern for front-line Emergency Department clinicians and staff<a href="https://www.nbcnews.com/now/video/idaho-doctor-says-physicians-learning-from-each-other-to-battle-covid-19-80878661545"><sup>[ref1, </sup><a href="https://www.nbcnews.com/now/video/health-care-workers-worry-about-supply-shortage-during-coronavirus-pandemic-80865349855"><sup>ref2, </sup><a href="https://www.nytimes.com/video/nyregion/100000007052136/coronavirus-elmhurst-hospital-queens.html"><sup>ref3]</sup></a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <a class="lightbox" href="vis-photos/image5.jpg">
-              <img src="vis-photos/image7.jpg" alt="Card Image" class="card-img-top">
-            </a>
-            <div class="card-body">
-              <h6>Risk</h6>
-              <p class="text-dark card-text">Risk of transmission within physicians/clinicians’ families will negatively affect their ability (and willingness) to provide essential care 
-              </p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="vis-photos/image5.jpg">
+                <img src="vis-photos/image7.jpg" alt="Card Image" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h6>Risk</h6>
+                <p class="text-dark card-text">Risk of transmission within physicians/clinicians’ families will negatively affect their ability (and willingness) to provide essential care
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6">
-          <div class="card border-0 transform-on-hover">
-            <a class="lightbox" href="vis-photos/image6.jpg">
-              <img src="vis-photos/image6.jpg" alt="Card Image" class="card-img-top">
-            </a>
-            <div class="card-body">
-              <h6>Family Clusters</h6>
-              <p class="text-dark card-text">COVID-19 is most contagious amongst family members and co-habitations within single residences as evidenced by family clusters<a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0251_article"><sup>[ref]</sup></a>
-              </p>
+          <div class="col-md-6 col-lg-6">
+            <div class="card border-0 transform-on-hover">
+              <a class="lightbox" href="vis-photos/image6.jpg">
+                <img src="vis-photos/image6.jpg" alt="Card Image" class="card-img-top">
+              </a>
+              <div class="card-body">
+                <h6>Family Clusters</h6>
+                <p class="text-dark card-text">COVID-19 is most contagious amongst family members and co-habitations within single residences as evidenced by family clusters<a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0251_article"><sup>[ref]</sup></a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-    </main>
+    </section>
+  </main>
+  <footer class="footer bg-dark"></footer>
 </body>
-<!-- FOOTER-->
-<footer class="footer bg-dark">
-    <div class="container bottom_border">
-        <div class="row">
-            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Contact Us</h5>
-                <!--headin5_amrc-->
-                <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-                <p><i class="fa fa-phone"></i> +91-9999878398 </p>
-                <p><i class="fa fa fa-envelope"></i> info@example.com </p>
-
-
-            </div>
-            <div class=" col-sm-4 col-md  col-6 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                </ul>
-                <!--footer_ul_amrc ends here-->
-            </div>
-
-
-            <div class=" col-sm-4 col-md  col-6 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <!--headin5_amrc-->
-                <ul class="footer_ul_amrc">
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                </ul>
-                <!--footer_ul_amrc ends here-->
-            </div>
-
-            <div class=" col-sm-4 col-md  col-12 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-                <!--headin5_amrc ends here-->
-
-                <ul class="footer_ul2_amrc">
-                    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
-                        </p>
-                    </li>
-                    <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-                        <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a>
-                        </p>
-                    </li>
-                </ul>
-                <!--footer_ul2_amrc ends here-->
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <!--foote_bottom_ul_amrc ends here-->
-        <p class="text-center">Copyright @2020
-            <ul class="social_footer_ul">
-            </ul>
-            <!--social_footer_ul ends here-->
-    </div>
-</footer>
 
 </html>

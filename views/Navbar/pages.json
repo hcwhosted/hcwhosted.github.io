@@ -1,0 +1,7 @@
+[
+  { "path": "/", "title": "Home" },
+  { "path": "/enroll-for-housing", "title": "Enroll For Housing" },
+  { "path": "/get-involved", "title": "Get Involved" },
+  { "path": "/faq", "title": "FAQs" },
+  { "path":"/about","title":"About"}
+]
