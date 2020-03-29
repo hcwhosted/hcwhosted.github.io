@@ -1,5 +1,5 @@
 {
-  "name": "cvsq.github.io",
+  "name": "hcwhosted.github.io",
   "version": "0.1.0",
   "description": "a simple html website",
   "scripts": {
@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cvsq/cvsq.github.io.git"
+    "url": "git+https://github.com/hcwhosted/hcwhosted.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/cvsq/cvsq.github.io/issues"
+    "url": "https://github.com/hcwhosted/hcwhosted.github.io/issues"
   },
   "license": "CC0-1.0",
-  "homepage": "https://github.com/cvsq/cvsq.github.io#readme",
+  "homepage": "https://github.com/hcwhosted/hcwhosted.github.io#readme",
   "devDependencies": {
     "serve": "^11.3.0"
   },
