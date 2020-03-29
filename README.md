@@ -7,7 +7,7 @@ a simple html website
 To run locally:
 ```
 git clone https://github.com/hcwhosted/hcwhosted.github.io.git
-cd cvsq.github.io
+cd hcwhosted.github.io
 npm install
 npm run serve
 ```
