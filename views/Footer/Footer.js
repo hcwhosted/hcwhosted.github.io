@@ -8,7 +8,9 @@ class Footer extends View {
     ]);
   }
   setup () {
-    this.d3el.html(this.resources[0]);
+    this.d3el.html(this.resources[0])
+      .classed('footer', true)
+      .classed('bg-dark', true);
   }
 }
 
