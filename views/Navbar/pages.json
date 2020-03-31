@@ -1,7 +1,9 @@
 [
-  { "path": "/", "title": "Home" },
   { "path": "/enroll-for-housing", "title": "Enroll For Housing" },
-  { "path": "/get-involved", "title": "Get Involved" },
-  { "path": "/faq", "title": "FAQs" },
-  { "path":"/about","title":"About"}
+  { "path": "/wellness-resources", "title": "Wellness Resources" },
+  { "path": "/background", "title": "Background" },
+  { "path": "/about","title":"About"},
+  { "path": "/faq","title":"FAQ"},
+  { "path": "/get-involved","title":"Get Involved"},
+  { "path": "/how-to-replicate","title":"How to Replicate"}
 ]
