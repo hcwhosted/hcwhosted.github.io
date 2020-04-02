@@ -1,6 +1,8 @@
 package-lock.json
 .DS_Store
 
+*.swp
+
 # we want to include specific files inside node_modules and ignore the rest...
 
 # unignore node_modules dir itself
