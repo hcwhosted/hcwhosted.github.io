@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = async () => {
     let mapContainer = document.querySelector("#mapcontainer")
     mapContainer.style.height = "300px"
 // make the map
@@ -12,5 +12,13 @@ L.tileLayer(
   "https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}@2x.png" // stamen toner tiles
   // stamen toner tiles
 ).addTo(map);
+
+// now add the geojson
+
+let geojson = await fetch("assets/Hospitals.geojson").then(res=> res.json())
+
+L.geoJSON(geojson).bindPopup(l=> {
+  return l.feature.properties.name
+}).addTo(map)
 
 }
