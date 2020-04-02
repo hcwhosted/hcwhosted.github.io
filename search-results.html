@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162379039-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162379039-1');
+  </script>
+  <title>
+    COVID-19 Cohorted Voluntary Self Quarantine
+  </title>
+  <script src="node_modules/d3/dist/d3.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="style/bootstrap.css"/>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="node_modules/less/dist/less.min.js" data-log-level="1"></script>
+  <script src="https://kit.fontawesome.com/f2d2b39d62.js" crossorigin="anonymous"></script>
+  <script type="module" src="controllers/VanillaController.js"></script>
+</head>
+
+<body>
+  <header></header>
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container mt-5">
+        <div id="siq_search_results"></div>
+      </div>
+    </div>
+    <br/>
+  </main>
+  <footer class="footer bg-dark"></footer>
+</body>
+
+</html>
