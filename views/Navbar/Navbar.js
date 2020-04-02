@@ -34,18 +34,18 @@ class Navbar extends View {
       });
   }
   setupSearchIQ() {
-		window.siqConfig = {
-			engineKey: "2cdce557dd6f75cfcca70a1beabf0740",
-			forceLoadSettings: true
-		};
-		window.siqConfig.baseUrl = "//pub.searchiq.co/";
-		var script = document.createElement("SCRIPT");
-		script.src = window.siqConfig.baseUrl +
+    window.siqConfig = {
+      engineKey: "2cdce557dd6f75cfcca70a1beabf0740",
+      forceLoadSettings: true
+    };
+    window.siqConfig.baseUrl = "//pub.searchiq.co/";
+    var script = document.createElement("SCRIPT");
+    script.src = window.siqConfig.baseUrl +
       '/js/container/siq-container-2.js?cb=' +
       (Math.floor(Math.random()*999999)) +
       '&engineKey=' + window.siqConfig.engineKey;
-		script.id = "siq-container";
-		document.getElementsByTagName("HEAD")[0].appendChild(script);
+    script.id = "siq-container";
+    document.getElementsByTagName("HEAD")[0].appendChild(script);
   }
 }
 
