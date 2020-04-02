@@ -13,7 +13,8 @@ npm run serve
 ```
 
 **Managing the navbar**
-Edit `views/Navbar/pages.json` to change the links at the top of the page.
+Edit `views/Navbar/pages.json` to change the links at the top of the page, and
+make sure to update `sitemap.xml` accordingly.
 
 **Controllers, custom views**
 Most pages should be able to just use `controllers/VanillaController.js`, that
