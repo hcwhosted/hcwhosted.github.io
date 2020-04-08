@@ -15,7 +15,7 @@ L.tileLayer(
 
 // now add the geojson
 
-let geojson = await fetch("assets/Hospitals.geojson").then(res=> res.json())
+let geojson = await fetch("assets/hotels.geojson").then(res=> res.json())
 //modify the icon used for popup
 let newIcon = L.icon({
     iconSize: [10, 20],
@@ -31,7 +31,7 @@ let markerSetFunc = (gjpt,latlng)=> {
 L.geoJSON(geojson,{
   pointToLayer:markerSetFunc
 }).bindPopup(l=> {
-  return l.feature.properties.name
+  return l.feature.properties.name +", "+ l.feature.properties.address
 }).addTo(map)
 
 }
