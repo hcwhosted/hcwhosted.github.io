@@ -19,7 +19,7 @@ let geojson = await fetch("assets/hotels.geojson").then(res=> res.json())
 //modify the icon used for popup
 let newIcon = L.icon({
     iconSize: [10, 20],
-    iconUrl:"assets/hospital_icon.svg",
+    iconUrl:"assets/hotel.svg",
 })
 //geojson pt, and latlng[num,num]
 let markerSetFunc = (gjpt,latlng)=> {
