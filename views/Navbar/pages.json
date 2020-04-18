@@ -6,6 +6,6 @@
   { "path": "/guidelines", "title": "Guidelines" },
   { "path": "/faq", "title": "FAQ" },
   { "path": "/how-to-replicate", "title": "How to Replicate" },
-  { "path": "/news", "title": "News and Social Media"},
-  { "path": "/wellness-resources", "title": "Wellness Resources" }
+  { "path": "/wellness-resources", "title": "Wellness Resources" },
+  { "path": "/news", "title": "News and Social Media"}
 ]
