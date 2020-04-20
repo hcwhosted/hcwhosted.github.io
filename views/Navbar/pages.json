@@ -1,11 +1,11 @@
 [
   { "path": "/about", "title": "About" },
   { "path": "/background", "title": "Background" },
-  { "path": "/enroll-for-housing", "title": "Enroll For Housing" },
+  { "path": "/enroll-for-housing", "title": "Housing & Services" },
   { "path": "/get-involved", "title":"Get Involved" },
   { "path": "/guidelines", "title": "Guidelines" },
   { "path": "/faq", "title": "FAQ" },
   { "path": "/how-to-replicate", "title": "How to Replicate" },
   { "path": "/wellness-resources", "title": "Wellness Resources" },
-  { "path": "/news", "title": "News and Social Media"}
+  { "path": "/news", "title": "HCW HOSTED in the Media"}
 ]
