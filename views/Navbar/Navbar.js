@@ -2,11 +2,14 @@ import { View } from '../../node_modules/uki/dist/uki.esm.js';
 
 class Navbar extends View {
   constructor (d3el) {
-    super(d3el, [
-      { type: 'text', url: 'views/Navbar/template.html' },
-      { type: 'json', url: 'views/Navbar/pages.json' },
-      { type: 'less', url: 'views/Navbar/style.less' }
-    ]);
+    super({
+      d3el,
+      resources: [
+        { type: 'text', url: 'views/Navbar/template.html' },
+        { type: 'json', url: 'views/Navbar/pages.json' },
+        { type: 'less', url: 'views/Navbar/style.less' }
+      ]
+    });
   }
   isCurrentPath (path) {
     const noExtension = window.location.pathname.replace('.html', '');
@@ -33,19 +36,19 @@ class Navbar extends View {
         }
       });
   }
-  setupSearchIQ() {
+  setupSearchIQ () {
     window.siqConfig = {
-      engineKey: "2cdce557dd6f75cfcca70a1beabf0740",
+      engineKey: '2cdce557dd6f75cfcca70a1beabf0740',
       forceLoadSettings: true
     };
-    window.siqConfig.baseUrl = "//pub.searchiq.co/";
-    var script = document.createElement("SCRIPT");
+    window.siqConfig.baseUrl = '//pub.searchiq.co/';
+    var script = document.createElement('SCRIPT');
     script.src = window.siqConfig.baseUrl +
       '/js/container/siq-container-2.js?cb=' +
-      (Math.floor(Math.random()*999999)) +
+      (Math.floor(Math.random() * 999999)) +
       '&engineKey=' + window.siqConfig.engineKey;
-    script.id = "siq-container";
-    document.getElementsByTagName("HEAD")[0].appendChild(script);
+    script.id = 'siq-container';
+    document.getElementsByTagName('HEAD')[0].appendChild(script);
   }
 }
 
