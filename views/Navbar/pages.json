@@ -1,9 +1,9 @@
 [
-  { "path": "/about", "title": "About" },
+  { "path": "/about", "title": "About US" },
   { "path": "/background", "title": "COVID Facts" },
   { "path": "/enroll-for-housing", "title": "Housing & Services" },
   { "path": "/get-involved", "title":"Get Involved" },
-  { "path": "/guidelines", "title": "Guidelines" },
+  { "path": "/guidelines", "title": "Health Guidelines" },
   { "path": "/faq", "title": "FAQ" },
   { "path": "/how-to-replicate", "title": "How to Replicate" },
   { "path": "/wellness-resources", "title": "Wellness Resources" },
