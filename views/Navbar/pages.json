@@ -1,6 +1,6 @@
 [
   { "path": "/about", "title": "About" },
-  { "path": "/background", "title": "Background" },
+  { "path": "/background", "title": "Background Information" },
   { "path": "/enroll-for-housing", "title": "Housing & Services" },
   { "path": "/get-involved", "title":"Get Involved" },
   { "path": "/guidelines", "title": "Guidelines" },
