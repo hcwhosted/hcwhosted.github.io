@@ -3,10 +3,11 @@
   { "path": "/background", "title": "COVID Facts" },
   { "path": "/enroll-for-housing", "title": "Housing & Services" },
   { "path": "/get-involved", "title":"Get Involved" },
-  // Commented out guildelines until updated
-  // { "path": "/guidelines", "title": "Health Guidelines" },
   { "path": "/faq", "title": "FAQ" },
   { "path": "/how-to-replicate", "title": "How to Replicate" },
   { "path": "/wellness-resources", "title": "Wellness Resources" },
   { "path": "/news", "title": "HCW HOSTED in the Media"}
 ]
+
+  // Commented out guildelines until updated
+  // { "path": "/guidelines", "title": "Health Guidelines" },
